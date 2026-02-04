@@ -154,7 +154,7 @@ class bodyMetrics:
                 subcalc = 0.691 + (self.height * -0.0024) + (self.height * -0.0024)
                 vfal = (((self.height * 0.027) - (subcalc * self.weight)) * -1) + (self.age * 0.07) - self.age
         else:
-            if self.height < self.weight * 1.6:
+            if self.height < self.weight * 1.6 + 63.0:
                 subcalc = ((self.height * 0.4) - (self.height * (self.height * 0.0826))) * -1
                 vfal = ((self.weight * 305) / (subcalc + 48)) - 2.9 + (self.age * 0.15)
             else:
